@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "6d7c3c48-e62c-4470-ba31-b2a827e552d3",
+		"name": "CHALLENGE-BINAR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33063195"
+	},
+	"item": [
+		{
+			"name": "chapter4",
+			"item": [
+				{
+					"name": "CARS",
+					"item": [
+						{
+							"name": "get cars",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/cars/8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"cars",
+										"8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all cars",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/cars",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"cars"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "post cars",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "mustang",
+											"type": "text"
+										},
+										{
+											"key": "detail_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "rentPerDay",
+											"value": "175000",
+											"type": "text"
+										},
+										{
+											"key": "size",
+											"value": "medium",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/D:/FILE ANDI/KULIAH/MSIB/BINAR/challenge/chapter4/assets/mobil2.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/cars",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"cars"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update cars",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "suzuki ertiga",
+											"type": "text"
+										},
+										{
+											"key": "detail_id",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "rentPerDay",
+											"value": "250000",
+											"type": "text"
+										},
+										{
+											"key": "size",
+											"value": "medium",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/andi ragil/Downloads/ertiga.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/cars/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"cars",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete cars",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/cars/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"cars",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DETAILS",
+					"item": [
+						{
+							"name": "get details",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/details/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"details",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all details",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/details/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"details",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "post details",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type",
+											"value": "crossover",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/details",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"details"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update details",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\" : \"SUV\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/details/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"details",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete details",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/details/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"details",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
